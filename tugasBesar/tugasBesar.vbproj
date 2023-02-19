@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F901CFE5-9B15-437A-8D7D-807BCD9E9606}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>tugasBesar</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>tugasBesar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>tugasBesar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="detailMobil.Designer.vb">
+      <DependentUpon>detailMobil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="detailMobil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAdmin.Designer.vb">
+      <DependentUpon>formAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\dataMobil.Designer.vb">
+      <DependentUpon>dataMobil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\dataMobil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\dataUser.Designer.vb">
+      <DependentUpon>dataUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\dataUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormEditProf.Designer.vb">
+      <DependentUpon>FormEditProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormEditProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormEPA.Designer.vb">
+      <DependentUpon>FormEPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormEPA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormHome.Designer.vb">
+      <DependentUpon>FormHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSewa.Designer.vb">
+      <DependentUpon>FormSewa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormSewa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\HomeAdmin.Designer.vb">
+      <DependentUpon>HomeAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\HomeAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\myorder.Designer.vb">
+      <DependentUpon>myorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\myorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.vb">
+      <DependentUpon>home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.vb">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuUtama.Designer.vb">
+      <DependentUpon>menuUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="registrasiForm.Designer.vb">
+      <DependentUpon>registrasiForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registrasiForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="detailMobil.resx">
+      <DependentUpon>detailMobil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAdmin.resx">
+      <DependentUpon>formAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\dataMobil.resx">
+      <DependentUpon>dataMobil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\dataUser.resx">
+      <DependentUpon>dataUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormEditProf.resx">
+      <DependentUpon>FormEditProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormEPA.resx">
+      <DependentUpon>FormEPA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormHome.resx">
+      <DependentUpon>FormHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormSewa.resx">
+      <DependentUpon>FormSewa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\HomeAdmin.resx">
+      <DependentUpon>HomeAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\myorder.resx">
+      <DependentUpon>myorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuUtama.resx">
+      <DependentUpon>menuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrasiForm.resx">
+      <DependentUpon>registrasiForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-hand-drawn-comics-to-rent-a-car-rental-poster-background-material-image_158441.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worldwide-location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5684426 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-user-avatar-login-interface-abstract-blue-icon-png-image_3917504.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-keepass-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-secure-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-rounded-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-rounded-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-rounded-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-layout-24 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-purchase-order-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-roof-box-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-rental-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-24 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toyota-avanza-generasi-baru.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6438547.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-arrow-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sedan-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-settings-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-management-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-coin-in-hand-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-address-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mail-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-phone-contact-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-24 %281%292.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
